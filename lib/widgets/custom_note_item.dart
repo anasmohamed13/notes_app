@@ -6,7 +6,7 @@ class NotesItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.only(top: 24, bottom: 24, left: 16, right: 2),
+      padding: const EdgeInsets.only(top: 24, bottom: 22, left: 10, right: 2),
       decoration: BoxDecoration(
         color: const Color(0xffFFCC80),
         borderRadius: BorderRadius.circular(16),
@@ -19,7 +19,7 @@ class NotesItem extends StatelessWidget {
               'flutter tips',
               style: TextStyle(
                 color: Colors.black,
-                fontSize: 24,
+                fontSize: 22,
               ),
             ),
             subtitle: Padding(
@@ -31,7 +31,7 @@ class NotesItem extends StatelessWidget {
                 'Bulid your career whith anas mohamed',
                 style: TextStyle(
                   color: Colors.black.withOpacity(0.5),
-                  fontSize: 18,
+                  fontSize: 17,
                 ),
               ),
             ),
@@ -45,7 +45,7 @@ class NotesItem extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(right: 16),
+            padding: const EdgeInsets.only(right: 18),
             child: Text(
               'march5,2024',
               style: TextStyle(
