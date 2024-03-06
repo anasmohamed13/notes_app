@@ -5,14 +5,16 @@ import 'package:flutter/material.dart';
 import '../constats.dart';
 
 class CustomTextField extends StatelessWidget {
-  const CustomTextField({super.key});
-
+  const CustomTextField({super.key, required this.hint, this.maxLines = 1});
+  final String hint;
+  final int maxLines;
   @override
   Widget build(BuildContext context) {
     return TextField(
       cursorColor: kprimaryColor,
+      maxLines: maxLines,
       decoration: InputDecoration(
-        hintText: 'title',
+        hintText: hint,
         border: bulidBorder(),
         enabledBorder: bulidBorder(),
         focusedBorder: bulidBorder(Color: kprimaryColor),
